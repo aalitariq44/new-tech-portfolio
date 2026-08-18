@@ -372,26 +372,16 @@ body {
 .smartphone-frame {
     width: 280px;
     height: 560px;
-    background: #000;
-    border: 12px solid #1f2937;
-    border-radius: 40px;
-    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.7);
+    background: #090c1f;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-lg, 16px);
+    box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
     overflow: hidden;
     position: relative;
 }
 
 .smartphone-frame::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 25px;
-    background: #1f2937;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    z-index: 20;
+    display: none;
 }
 
 .smartphone-screen {
@@ -1473,6 +1463,10 @@ body {
     .modal-actions {
         flex-direction: column;
     }
+    .modal-phone-frame {
+        width: 180px;
+        height: 380px;
+    }
 }
 
 /* Screenshot Gallery & Phone Mockup in Modal */
@@ -1484,28 +1478,18 @@ body {
 }
 
 .modal-phone-frame {
-    width: 190px;
-    height: 380px;
-    background: #000;
-    border: 6px solid #1e293b;
-    border-radius: 26px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    width: 210px;
+    height: 440px;
+    background: #090c1f;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
     overflow: hidden;
     position: relative;
 }
 
 .modal-phone-frame::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 12px;
-    background: #1e293b;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    z-index: 20;
+    display: none;
 }
 
 .modal-phone-screen {
