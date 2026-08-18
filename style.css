@@ -388,13 +388,16 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background: #000;
+    background: #090c1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .smartphone-screen img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: opacity var(--transition-slow) ease-in-out;
 }
 
@@ -1496,7 +1499,10 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background: #04060c;
+    background: #090c1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-screenshot-img {
@@ -1505,7 +1511,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 5;
